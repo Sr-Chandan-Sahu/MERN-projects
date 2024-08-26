@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const logout = () => {
     localStorage.clear();
-    navigate('/signup');
+    navigate('/login');
   };
 
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/signup" onClick={logout} className="hover:text-gray-200">
+              <Link to="/login" onClick={logout} className="hover:text-red-500">
                 Logout
               </Link>
             </li>
